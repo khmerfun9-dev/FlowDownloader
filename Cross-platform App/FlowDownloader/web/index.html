@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-32.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowDownloader - Cross-Platform Video Downloader</title>
+    
+    <!-- Google Consent Mode v2 - Must load before GA4 -->
+    <script>
+      // Initialize Google Consent Mode
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      // Default consent state (denied until user consents)
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+    </script>
+    
+    <!-- Google Analytics 4 - Only load if not in Electron -->
+    <script>
+      // Check if running in Electron
+      const isElectron = navigator.userAgent.toLowerCase().indexOf('electron') > -1;
+      const GA_MEASUREMENT_ID = '%VITE_GA_MEASUREMENT_ID%';
+      
+      if (!isElectron && GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== '%VITE_GA_MEASUREMENT_ID%') {
+        // Load GA4 gtag script
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+        document.head.appendChild(script);
+        
+        // Initialize GA4
+        script.onload = function() {
+          gtag('js', new Date());
+          gtag('config', GA_MEASUREMENT_ID, {
+            'anonymize_ip': true,
+            'allow_google_signals': false,
+            'cookie_flags': 'SameSite=None;Secure'
+          });
+        };
+      }
+    </script>
+    
+    <!-- Google AdSense - Only load if not in Electron -->
+    <script>
+      const ADSENSE_PUBLISHER = '%VITE_ADSENSE_PUBLISHER%';
+      
+      if (!isElectron && ADSENSE_PUBLISHER && ADSENSE_PUBLISHER !== '%VITE_ADSENSE_PUBLISHER%') {
+        const adsenseScript = document.createElement('script');
+        adsenseScript.async = true;
+        adsenseScript.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER}`;
+        adsenseScript.crossOrigin = 'anonymous';
+        document.head.appendChild(adsenseScript);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

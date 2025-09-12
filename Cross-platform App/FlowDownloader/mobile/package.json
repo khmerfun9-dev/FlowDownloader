@@ -1,0 +1,46 @@
+{
+  "name": "flowdownloader-mobile",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:android:preview": "eas build --platform android --profile preview",
+    "build:android:production": "eas build --platform android --profile production",
+    "build:android:apk": "eas build --platform android --profile production-apk",
+    "build:ios:preview": "eas build --platform ios --profile preview",
+    "build:ios:production": "eas build --platform ios --profile production",
+    "build:all:preview": "eas build --platform all --profile preview",
+    "build:all:production": "eas build --platform all --profile production",
+    "submit:android": "eas submit --platform android",
+    "submit:ios": "eas submit --platform ios",
+    "update": "expo publish",
+    "prebuild": "expo prebuild",
+    "prebuild:clean": "expo prebuild --clean"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^13.0.0",
+    "@react-native-async-storage/async-storage": "1.18.2",
+    "expo": "~49.0.15",
+    "expo-file-system": "~15.4.5",
+    "expo-linear-gradient": "~12.3.0",
+    "expo-media-library": "~15.4.1",
+    "expo-permissions": "~14.2.1",
+    "expo-status-bar": "~1.6.0",
+    "firebase": "^12.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.72.6",
+    "react-native-gesture-handler": "~2.12.0",
+    "react-native-reanimated": "~3.3.0",
+    "react-native-safe-area-context": "4.6.3",
+    "react-native-screens": "~3.22.0",
+    "react-native-web": "~0.19.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}

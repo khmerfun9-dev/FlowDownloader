@@ -1,0 +1,17 @@
+{
+  "user": {
+    "id": "test-user-123",
+    "email": "test@flowdownloader.com",
+    "firstName": "Test",
+    "lastName": "User",
+    "licenseType": "FREE"
+  },
+  "token": "mock-jwt-token-for-testing",
+  "settings": {
+    "downloadPath": "D:\\W\\Software Build\\Cross-platform App\\FlowDownloader\\desktop\\test-downloads",
+    "autoStart": false,
+    "notifications": true,
+    "theme": "dark"
+  },
+  "lastLogin": "2025-09-11T22:51:04.881Z"
+}

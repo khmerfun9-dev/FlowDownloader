@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "FlowDownloader",
+    "slug": "flowdownloader-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.flowdownloader.mobile",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "FlowDownloader needs access to your photo library to save downloaded videos.",
+        "NSPhotoLibraryAddUsageDescription": "FlowDownloader needs permission to save downloaded videos to your photo library.",
+        "NSCameraUsageDescription": "FlowDownloader may need camera access for certain features."
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f172a"
+      },
+      "package": "com.flowdownloader.mobile",
+      "versionCode": 1,
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "WAKE_LOCK"
+      ],
+      "useNextNotificationsApi": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow FlowDownloader to access your photos to save downloaded videos.",
+          "savePhotosPermission": "Allow FlowDownloader to save downloaded videos to your photo library.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ]
+  }
+}

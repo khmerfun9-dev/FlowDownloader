@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  
+      <defs>
+        <linearGradient id="symbolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+  
+  <!-- Circular flow shape -->
+  <circle cx="512" cy="512" r="358.4" fill="none" stroke="url(#symbolGrad)" stroke-width="40.96" opacity="0.8"/>
+  
+  <!-- Flow wave inside circle -->
+  <path d="M296.96000000000004 512 Q512 404.48 727.04 512 Q512 619.52 296.96000000000004 512" 
+        fill="none" stroke="url(#symbolGrad)" stroke-width="25.6" opacity="0.6"/>
+  
+  <!-- Download arrow -->
+  <g transform="translate(512, 261.12)">
+    <path d="M0 0 L0 230.39999999999998 M-76.8 153.6 L0 230.39999999999998 L76.8 153.6" 
+          stroke="url(#symbolGrad)" stroke-width="30.72" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  
+  <!-- Play button -->
+  <g transform="translate(762.88, 512)">
+    <path d="M-81.92 -65.536 L81.92 0 L-81.92 65.536 Z" 
+          fill="url(#symbolGrad)" opacity="0.9"/>
+  </g>
+</svg>

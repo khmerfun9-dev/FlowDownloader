@@ -1,0 +1,15 @@
+# ads.txt file for FlowDownloader
+# This file is required by Google AdSense for publisher verification
+# Replace ca-pub-XXXXXXXXXXXX with your actual AdSense Publisher ID
+
+# Google AdSense
+google.com, ca-pub-XXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+
+# Instructions:
+# 1. Replace ca-pub-XXXXXXXXXXXX with your actual Google AdSense Publisher ID
+# 2. Upload this file to your domain root (e.g., https://yourdomain.com/ads.txt)
+# 3. Verify the file is accessible publicly
+# 4. Wait for Google to crawl and verify your ads.txt file
+
+# Additional authorized sellers can be added below
+# Format: domain, publisher_id, relationship, certification_authority_id

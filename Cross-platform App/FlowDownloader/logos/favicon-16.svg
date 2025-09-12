@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="faviconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Simplified circle with arrow -->
+  <circle cx="8" cy="8" r="4.8" fill="url(#faviconGrad)"/>
+  <path d="M8 6.08 L8 8.96 M6.5600000000000005 8 L8 8.96 L9.44 8" 
+        stroke="#ffffff" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

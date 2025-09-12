@@ -1,0 +1,8 @@
+{
+  "downloadPath": "D:\\W\\Software Build\\Cross-platform App\\FlowDownloader\\desktop\\test-downloads",
+  "maxConcurrentDownloads": 3,
+  "autoStart": false,
+  "notifications": true,
+  "theme": "dark",
+  "language": "en"
+}
